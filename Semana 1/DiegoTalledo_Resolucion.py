@@ -90,6 +90,7 @@ def grillaG():
 
 grillaG()
 
+#Criba de Eratóstenes
 def criba(n):
   t=[]
   for i in range(n):
