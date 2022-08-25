@@ -1,0 +1,62 @@
+#1
+import random
+
+def generar(n):
+   arreglo=[random.randint(1,100) for i in range(n)]
+   return arreglo
+
+#2
+lista=[10,20,30,40,50]
+def mostrar(arreglo):
+    for  i in arreglo:
+        print(i)
+mostrar(lista)
+
+#3
+lista2=[10,20,30,40,50]
+def reversa(arreglo):
+    arreglo.reverse()
+    print(arreglo)
+
+reversa(lista2)
+
+#4
+lista3=[10,20,30,40,50]
+def minArreglo(arreglo):
+    #minimo=arreglo[0]
+    #for i in arreglo:
+    #if i<minimo
+    #minimo=i
+    #return minimo
+
+    minimo=min(arreglo)
+    print(minimo)
+
+minArreglo(lista3)
+
+#5
+lista4=[10,20,30,40,50]
+def mediaArreglo(arreglo):
+    suma=0
+    for i in arreglo:
+        suma=suma +i
+
+    longitud=len(arreglo)
+    return print(suma/longitud)
+mediaArreglo(lista4)
+
+#6
+lista=[10,20,30,20,20,50]
+def ocurrencias(arreglo):
+    repetidos=[]
+    archivo=[]
+    contador=0
+    for i in arreglo:
+        if i not in archivo:
+            archivo.append(i)
+        else: 
+            repetidos.append(i)
+            contador=repetidos.count(i)
+    print(contador)
+
+ocurrencias(lista)
